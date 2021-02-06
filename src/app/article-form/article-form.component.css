@@ -1,0 +1,14 @@
+.articleForm{
+  display: flex;
+  flex-direction: column;
+}
+
+@media(min-width:600px){
+  .articleForm{
+    flex-direction: row;
+  }
+}
+
+.articleForm>*{
+  margin: 1em;
+}

@@ -1,0 +1,18 @@
+.articleList{
+  margin: 1em;
+}
+
+.article{
+  display: grid;
+  margin: 0.5em 0;
+}
+
+@media(min-width:600px){
+  .article{
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+.article>div{
+  padding: 0.5em 1em;
+}

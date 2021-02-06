@@ -1,0 +1,16 @@
+<div *ngIf="articleList$ | async; let articleList" class="articleList">
+  <div *ngFor="let article of articleList" (click)="selectArticle(article)" class="article">
+    <div>
+      {{ article.title }}
+    </div>
+    <div>
+      {{ article.description }}
+    </div>
+    <button
+      (click)="deleteArticle(article._id); $event.stopImmediatePropagation()"
+    >
+      Delete
+    </button>
+  </div>
+</div>
+<!-- <pre>{{ articleList$ | async | json }}</pre> -->

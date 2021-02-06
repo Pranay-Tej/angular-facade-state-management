@@ -1,0 +1,17 @@
+<form (ngSubmit)="saveArticle()" [formGroup]="articleForm" class="articleForm">
+  <input
+    type="text"
+    name="title"
+    id="title"
+    formControlName="title"
+    placeholder="title"
+  />
+  <input
+    type="text"
+    name="description"
+    id="description"
+    formControlName="description"
+    placeholder="description"
+  />
+  <button type="submit">Save</button>
+</form>
